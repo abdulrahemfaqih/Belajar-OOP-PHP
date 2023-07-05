@@ -20,7 +20,6 @@ class Produk
     $this->jmlHalaman = $jmlHalaman;
     $this->waktuMain = $waktuMain;
     $this->tipe = $tipe;
-
   }
 
   public function getLabel()
@@ -28,7 +27,7 @@ class Produk
     return "{$this->penulis}, {$this->penerbit}";
   }
 
-  public function cetakInfoLengkap()
+  public function getInfoProduk()
   {
     $str = "{$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
 
@@ -43,8 +42,8 @@ class Produk
 }
 
 
-class Komik extends Produk {
-
+class Komik extends Produk
+{
 }
 
 
@@ -64,9 +63,9 @@ $produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 10000, 100, 0
 $produk2 = new Produk("Free Fire", "Abdul Rahem Faqih", "Garena", 0, 0, 0, "Game");
 
 echo "Komik: " . $produk1->getLabel() . "<br>";
-echo "Game: " . $produk2->getLabel();
-
+echo "Game: " . $produk2->getLabel() . "<br>";
+echo "<hr>";
 $infoProduk1 = new CetakInfoProduct();
-echo $infoProduk1->cetak($produk1);
+echo $produk1->getInfoProduk();
 echo '<br>';
-echo $produk1->cetakInfoLengkap();
+echo $produk2->getInfoProduk();
