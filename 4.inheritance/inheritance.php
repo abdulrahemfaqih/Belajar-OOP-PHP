@@ -23,6 +23,12 @@ class Produk
   {
     return "{$this->penulis}, {$this->penerbit}";
   }
+
+  public function getInfoProduk()
+  {
+    $str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
+    return $str;
+  }
 }
 
 
@@ -30,7 +36,7 @@ class Komik extends Produk
 {
   public function getInfoProduk()
   {
-    $str = "Komik : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga}) - {$this->jmlHalaman} Halaman";
+    $str = "Komik :" . parent::getInfoProduk() . " - {$this->jmlHalaman} Halaman";
     return $str;
   }
 }
@@ -39,7 +45,7 @@ class Game extends Produk
 {
   public function getInfoProduk()
   {
-    $str = "Game : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga}) - {$this->waktuMain} Jam";
+    $str = "Game :" . parent::getInfoProduk() . "- {$this->waktuMain} Jam";
     return $str;
   }
 }
@@ -58,7 +64,7 @@ class CetakInfoProduct
 
 
 $produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 10000, 1000);
-$produk2 = new Game("Free Fire", "Abdul Rahem Faqih", "Garena", 10000,0, 200000);
+$produk2 = new Game("Free Fire", "Abdul Rahem Faqih", "Garena", 10000, 0, 200000);
 
 echo "Komik: " . $produk1->getLabel() . "<br>";
 echo "Game: " . $produk2->getLabel() . "<br>";
