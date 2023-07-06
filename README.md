@@ -39,6 +39,13 @@ Pemrograman berorientasi objek (PBO) adalah paradigma pemrograman yang berfokus 
 
 - **Getters**: Metode yang digunakan untuk mengambil nilai properti dari sebuah objek. Getter umumnya memiliki nama yang diawali dengan "get" diikuti oleh nama properti yang ingin diambil.
 
+## Static Keyword
+
+- **catatn penting**: 
+  - **1**. Memungkinkan akses langsung ke properti dan metode kelas tanpa harus membuat objek.
+  - **2**. Menghemat memori dengan membagikan nilai properti yang sama di antara semua objek kelas.
+  - **3**. Memungkinkan penggunaan metode bantu atau utilitas yang dapat digunakan tanpa perlu objek. 
+  - **4**. Biasanya digunakan untuk membuat fungsi bantuan/helper
 
 ## Menjalankan Contoh Kode
 
