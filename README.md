@@ -33,6 +33,13 @@ Pemrograman berorientasi objek (PBO) adalah paradigma pemrograman yang berfokus 
   - **Protected**: Properti atau metode yang dideklarasikan sebagai `protected` hanya dapat diakses dari dalam kelas itu sendiri atau dari kelas turunan. Properti atau metode dengan visibilitas `protected` tidak dapat diakses langsung dari kode di luar kelas atau objek tersebut.
   - **Private**: Properti atau metode yang dideklarasikan sebagai `private` hanya dapat diakses dari dalam kelas itu sendiri. Properti atau metode dengan visibilitas `private` tidak dapat diakses dari kelas turunan atau kode di luar kelas.
 
+## Setters and Getters
+
+- **Setters**: Metode yang digunakan untuk mengatur atau mengubah nilai properti dalam sebuah objek. Dalam setter, validasi dan manipulasi data dapat dilakukan sebelum nilai properti diubah. Setter umumnya memiliki nama yang diawali dengan "set" diikuti oleh nama properti yang ingin diubah.
+
+- **Getters**: Metode yang digunakan untuk mengambil nilai properti dari sebuah objek. Getter umumnya memiliki nama yang diawali dengan "get" diikuti oleh nama properti yang ingin diambil.
+
+
 ## Menjalankan Contoh Kode
 
 1. Pastikan Anda memiliki lingkungan pengembangan PHP yang telah terinstal.
