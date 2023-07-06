@@ -26,24 +26,30 @@ class Produk
   {
     return "{$this->penulis}, {$this->penerbit}";
   }
-
-  public function getInfoProduk()
-  {
-    $str = "{$this->tipe} : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
-
-    if ($this->tipe == "Komik") {
-      $str .= " - {$this->jmlHalaman} Halaman.";
-    } else {
-      $str .= " ~ {$this->waktuMain} Jam.";
-    }
-
-    return $str;
-  }
+  // public function getInfoProduk()
+  // {
+  //   $str = "{$this->judul} | {$this->getLabel()} (Rp. {$this->harga})";
+  //   return $str;
+  // }
 }
 
 
 class Komik extends Produk
 {
+  public function getInfoProduk()
+  {
+    $str = "Komik : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga}) - {$this->jmlHalaman} Halaman";
+    return $str;
+  }
+}
+
+class Game extends Produk
+{
+  public function getInfoProduk()
+  {
+    $str = "Game : {$this->judul} | {$this->getLabel()} (Rp. {$this->harga}) - {$this->waktuMain} Jam";
+    return $str;
+  }
 }
 
 
@@ -60,7 +66,7 @@ class CetakInfoProduct
 
 
 $produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 10000, 100, 0, "Komik");
-$produk2 = new Produk("Free Fire", "Abdul Rahem Faqih", "Garena", 0, 0, 0, "Game");
+$produk2 = new Game("Free Fire", "Abdul Rahem Faqih", "Garena", 0, 0, 0, "Game");
 
 echo "Komik: " . $produk1->getLabel() . "<br>";
 echo "Game: " . $produk2->getLabel() . "<br>";
