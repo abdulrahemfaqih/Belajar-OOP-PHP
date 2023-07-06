@@ -25,9 +25,16 @@ Pemrograman berorientasi objek (PBO) adalah paradigma pemrograman yang berfokus 
 
 - **Overriding**: Konsep yang memungkinkan kelas turunan untuk menyediakan implementasi yang berbeda untuk metode yang sudah ada di kelas induk. Dengan overriding, metode di kelas turunan akan menggantikan implementasi metode di kelas induk. Hal ini memungkinkan kita untuk mengubah perilaku metode yang diwarisi dari kelas induk.
 
+### Visibilitas
+
+- **Visibilitas**: Tingkat aksesibilitas properti dan metode dalam sebuah kelas. Terdapat tiga jenis visibilitas yang umum digunakan:
+
+  - **Public**: Properti atau metode yang dideklarasikan sebagai `public` dapat diakses dari mana saja, baik dari dalam kelas itu sendiri, kelas turunan, atau kode di luar kelas.
+  - **Protected**: Properti atau metode yang dideklarasikan sebagai `protected` hanya dapat diakses dari dalam kelas itu sendiri atau dari kelas turunan. Properti atau metode dengan visibilitas `protected` tidak dapat diakses langsung dari kode di luar kelas atau objek tersebut.
+  - **Private**: Properti atau metode yang dideklarasikan sebagai `private` hanya dapat diakses dari dalam kelas itu sendiri. Properti atau metode dengan visibilitas `private` tidak dapat diakses dari kelas turunan atau kode di luar kelas.
+
 ## Menjalankan Contoh Kode
 
 1. Pastikan Anda memiliki lingkungan pengembangan PHP yang telah terinstal.
 2. Salin kode dari file yang ingin dijalankan dan simpan dengan ekstensi `.php`.
 3. Jalankan file tersebut dengan menjalankan perintah `php nama_file.php` di terminal.
-
