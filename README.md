@@ -38,3 +38,5 @@ Pemrograman berorientasi objek (PBO) adalah paradigma pemrograman yang berfokus 
 1. Pastikan Anda memiliki lingkungan pengembangan PHP yang telah terinstal.
 2. Salin kode dari file yang ingin dijalankan dan simpan dengan ekstensi `.php`.
 3. Jalankan file tersebut dengan menjalankan perintah `php nama_file.php` di terminal.
+
+
