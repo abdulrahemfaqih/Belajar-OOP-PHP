@@ -11,5 +11,14 @@ require_once "App/init.php";
 //    $cetakProduk->tambahProduk($$produkVariable);
 // }
 // echo $cetakProduk->cetak();
-$user = new User();
+
+// alias
+use App\Produk\User as ProdukUser;
+use App\Service\User as ServiceUser;
+
+$user1 = new ProdukUser();
+echo "<br>";
+$user2 = new ServiceUser();
+
+
 
