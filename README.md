@@ -41,7 +41,7 @@ Pemrograman berorientasi objek (PBO) adalah paradigma pemrograman yang berfokus 
 
 ## Static Keyword
 
-- **catatn penting**: 
+- **catatan penting**: 
   - **1**. Memungkinkan akses langsung ke properti dan metode kelas tanpa harus membuat objek.
   - **2**. Menghemat memori dengan membagikan nilai properti yang sama di antara semua objek kelas.
   - **3**. Memungkinkan penggunaan metode bantu atau utilitas yang dapat digunakan tanpa perlu objek. 
