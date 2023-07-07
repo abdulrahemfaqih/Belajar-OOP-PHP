@@ -17,7 +17,7 @@ class Komik extends Produk implements infoProduk
 
    public function getInfoProduk()
    {
-      $str = "Komik :" . $this->getInfo() . " - {$this->jmlHalaman} Halaman";
+      $str = "Komik : " . $this->getInfo() . " - {$this->jmlHalaman} Halaman";
       return $str;
    }
 }
